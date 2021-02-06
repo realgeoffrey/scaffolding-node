@@ -1,7 +1,19 @@
 {
   "name": "scaffolding-node",
-  "version": "1.0.0",
   "description": "Node.js的脚手架",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:realgeoffrey/scaffolding-node.git"
+  },
+  "keywords": [
+    "scaffolding"
+  ],
+  "author": "realgeoffrey",
+  "license": "MIT",
+  "homepage": "https://github.com/realgeoffrey/scaffolding-node#readme",
+  "bugs": {
+    "url": "https://github.com/realgeoffrey/scaffolding-node/issues"
+  },
   "main": "index.ts",
   "scripts": {
     "eslint:ts": "eslint --fix --ext .ts .",
@@ -42,5 +54,6 @@
   },
   "dependencies": {
     "pm2": "^4.5.4"
-  }
+  },
+  "version": "1.0.1"
 }
