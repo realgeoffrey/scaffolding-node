@@ -1,0 +1,57 @@
+{
+  "name": "scaffolding-node",
+  "description": "Node.js的脚手架",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:realgeoffrey/scaffolding-node.git"
+  },
+  "keywords": [
+    "scaffolding"
+  ],
+  "author": "realgeoffrey",
+  "license": "MIT",
+  "homepage": "https://github.com/realgeoffrey/scaffolding-node#readme",
+  "bugs": {
+    "url": "https://github.com/realgeoffrey/scaffolding-node/issues"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "eslint:ts": "eslint --fix --ext .ts .",
+    "eslint:js": "eslint --fix --ext .js .",
+    "dev": "pm2 start pm2-dev.json",
+    "dev:stop": "pm2 stop pm2-dev.json && pm2 delete pm2-dev.json",
+    "tsc": "tsc",
+    "start": "npm run tsc && pm2 start pm2.json",
+    "stop": "pm2 stop pm2.json && pm2 delete pm2.json",
+    "reload": "npm run tsc && pm2 reload pm2.json"
+  },
+  "lint-staged": {
+    "*.ts": "npm run eslint:ts",
+    "*.js": "npm run eslint:js"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "simple-git-hooks": "^2.7.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "pm2": "^5.1.2"
+  },
+  "version": "1.0.3"
+}
