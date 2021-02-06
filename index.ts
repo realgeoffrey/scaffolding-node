@@ -1,0 +1,1 @@
+// const xx = require('./src')
