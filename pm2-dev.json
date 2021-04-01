@@ -7,7 +7,7 @@
 
       "error_file": "./pm2-logs/err.log",
       "out_file": "./pm2-logs/out.log",
-      "log_date_format": "YYYY-MM-DD HH:mm",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
       "max_memory_restart": "200M",
 
       "exec_mode": "fork",
