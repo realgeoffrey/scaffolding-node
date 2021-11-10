@@ -1,6 +1,6 @@
 # scaffolding-node
 
->scaffolding of Node.js: TypeScript+pm2+--inspect+ESLint+Prettier+husky+lint-staged
+>scaffolding of Node.js: TypeScript+pm2+--inspect+ESLint+Prettier+simple-git-hooks+lint-staged
 
 纯后台服务。
 
