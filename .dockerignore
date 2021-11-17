@@ -1,0 +1,5 @@
+node_modules
+
+pm2-logs
+pm2.json
+pm2-dev.json
