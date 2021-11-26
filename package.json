@@ -18,13 +18,17 @@
   "scripts": {
     "eslint:ts": "eslint --fix --ext .ts .",
     "eslint:js": "eslint --fix --ext .js .",
+
     "dev": "pm2 start pm2-dev.json",
     "dev:stop": "pm2 stop pm2-dev.json && pm2 delete pm2-dev.json",
+
     "tsc": "tsc",
+
     "start:pm2": "npm run tsc && pm2 start pm2.json",
     "stop:pm2": "pm2 stop pm2.json && pm2 delete pm2.json",
     "reload:pm2": "npm run tsc && pm2 reload pm2.json",
     "pm2:ls": "pm2 ls",
+
     "start": "npm run tsc && cross-env NODE_ENV=production node ./src/index.js"
   },
   "lint-staged": {
