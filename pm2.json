@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "scaffolding-node",
-      "script": "./src/index.js",
+      "script": "./dist/index.js",
 
       "error_file": "./pm2-logs/err.log",
       "out_file": "./pm2-logs/out.log",
