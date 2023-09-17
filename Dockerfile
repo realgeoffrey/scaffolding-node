@@ -8,4 +8,5 @@ RUN npm i
 
 EXPOSE 8080
 
+# 或 CMD [ "npm", "start:pm2" ]
 CMD [ "npm", "start" ]
