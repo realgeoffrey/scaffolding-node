@@ -3,7 +3,7 @@ process.title = process.env.NODE_ENV === "development" ? "dev-scaffolding-node" 
 
 console.log("可加任意插件", process.env.NODE_ENV);
 
-const http = require("http");
+const http = require("node:http");
 
 http
   .createServer(function (req: any, res: any) {
