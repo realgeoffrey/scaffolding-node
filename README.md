@@ -1,6 +1,7 @@
 # scaffolding-node
 
 [![NPM Version](https://img.shields.io/npm/v/scaffolding-node)](https://www.npmjs.com/package/scaffolding-node)
+![Node Current](https://img.shields.io/node/v/scaffolding-node)
 
 >scaffolding of Node.js: TypeScript+pm2+--inspect+ESLint+Prettier+simple-git-hooks+lint-staged
 
